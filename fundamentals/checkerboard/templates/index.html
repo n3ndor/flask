@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkerbox inbox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+  </head>
+  <body>
+    <h2 style="background-color: {{color2}}; color: {{color1}};">*** Checkerboard ***</h2>
+    <table>
+      {% for i in range(row): %}
+      <tr>
+        {% for x in range(0,col) %}
+            {% if (x+i) % 2 == 0 %}
+                <td class="color1"style="background-color: {{color1}};"></td>
+            {% else %}
+                <td class="color2"style="background-color: {{color2}};"></td>
+            {%  endif %}
+        {% endfor %}
+    </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
