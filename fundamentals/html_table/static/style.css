@@ -1,0 +1,31 @@
+* {
+    background-color: bisque;
+}
+
+table {
+    margin: 20px;
+}
+
+th {
+    background-color: powderblue;
+    padding: 0 20px;
+}
+
+td {
+    background-color: lightcoral;
+    padding: 0 20px;
+}
+
+th:hover {
+    background-color: aqua;
+    box-shadow: 3px 3px 3px 3px;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: red;
+    color: rebeccapurple;
+    box-shadow: 3px 3px 3px;
+    cursor: pointer;
+}
