@@ -9,8 +9,17 @@
 </head>
 <body>
     <h2>Hello! Welcome to Counter:</h2>
-    <h3>{{session['users']}}</h3>
-    <button class="add">Add two visits!</button>
-    <button class="reset">Reset</button>
+    <div class="container">
+        <h3>Count Session: {{session['count']}}</h3>
+        <h3>Visited Session: {{session['visited']}}</h3>
+        <h3>Increment with {{session['increment']}}</h3>
+        <a class="add" href="/add">+{{session['increment']}}</a>
+        <a class="reset" href="/destroy_session">Reset</a>
+        <form action="/increment" method="POST">
+            <input class="increment" name="increment" placeholder="increment value">
+        </form>
+    </div>
+    
+
 </body>
 </html>

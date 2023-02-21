@@ -1,5 +1,15 @@
 h2 {
     background-color: bisque;
+    width: 50%;
+}
+
+.container {
+    margin-left: 50px;
+}
+
+a {
+    padding: 0 10px;
+    border-radius: 20px;
 }
 
 .add {
@@ -8,4 +18,9 @@ h2 {
 
 .reset {
     background-color: green;
+}
+
+.increment {
+    margin-top: 10px;
+    width: 100px;
 }

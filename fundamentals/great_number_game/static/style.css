@@ -1,0 +1,17 @@
+h2,
+h3,
+form {
+    text-align: center;
+}
+
+span {
+    color: blueviolet;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.hidden:hover {
+    color: red;
+}
