@@ -32,7 +32,7 @@ def destroy():
 #     session['count'] += n
 #     return render_template("index.html")
 
-@app.route("/increment", methods=["POST"])
+@app.route("/increment", methods=["post"])
 def set_increment_value():
     session["count"] += int(request.form["increment"])
     session["increment"] = int(request.form["increment"])

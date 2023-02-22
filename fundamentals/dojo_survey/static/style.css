@@ -1,0 +1,31 @@
+h2 {
+    color: gold
+}
+
+.send {
+    background-color: gold;
+    border: none;
+    width: 100px;
+    margin: 10px 0;
+}
+
+.container,
+.form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container {
+    background-color: rgb(71, 71, 71);
+    width: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.form {
+    width: 200px;
+}

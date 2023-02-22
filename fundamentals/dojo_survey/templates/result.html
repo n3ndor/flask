@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Result</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Submitted Info</h2>
+            <h3>Name: {{session["name"]}}</h3>
+            <h3>Location: {{session["location"]}}</h3>
+            <h3>Language: {{session["language"]}}</h3>
+            <h3>Your comment: {{session["comment"]}}</h3>
+        </div>
+    </div>
+</body>
+</html>

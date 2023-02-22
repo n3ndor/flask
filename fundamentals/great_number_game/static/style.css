@@ -15,3 +15,20 @@ span {
 .hidden:hover {
     color: red;
 }
+
+.input {
+    width: 50px;
+}
+
+.myGuess {
+    background-color: bisque;
+    border: 1px solid lightgrey;
+    color: red;
+}
+
+.again {
+    margin-top: 10px;
+    background-color: bisque;
+    border: 1px solid lightgrey;
+    color: green;
+}
