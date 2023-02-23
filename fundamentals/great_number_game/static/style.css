@@ -4,6 +4,10 @@ form {
     text-align: center;
 }
 
+body {
+    background-color: blanchedalmond;
+}
+
 span {
     color: blueviolet;
 }
@@ -18,6 +22,7 @@ span {
 
 .input {
     width: 50px;
+    border: none;
 }
 
 .myGuess {
@@ -31,4 +36,10 @@ span {
     background-color: bisque;
     border: 1px solid lightgrey;
     color: green;
+}
+
+p {
+    color: green;
+    text-align: center;
+    font-size: xx-large;
 }

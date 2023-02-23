@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h2>Welcome to Ninja Gold Game:</h2>
+    <span class="showGold">Your gold: 💰 {{ gold }}</span>
+
+    <form action="process_money">
+        
+    </form>
+
+
+    <div class="container">
+        <div id="farm">
+            <h3>Farm</h3>
+            <p>(earn 10-20 golds)</p>
+            <button type="submit">Find Gold!</button>
+        </div>
+        <div id="cave">
+            <h3>Cave</h3>
+            <p>(earn 5-10 golds)</p>
+            <button type="submit">Find Gold!</button>
+        </div>
+        <div id="house">
+            <h3>House</h3>
+            <p>(earn 2-5 golds)</p>
+            <button type="submit">Find Gold!</button>
+        </div>
+        <div id="casino">
+            <h3>Casino</h3>
+            <p>(earn/takes 0-50 golds)</p>
+            <button type="submit">Find Gold!</button>
+        </div>
+    </div>
+</body>
+</html>

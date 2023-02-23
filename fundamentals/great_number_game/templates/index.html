@@ -17,10 +17,18 @@
         <input class="input" type="number" name="nr" max="100" min="1">
         <input class="myGuess" type="submit">
     </form>
-    <form action="reset">
-        <input class="again" type="submit" value="Try again">
-    </form>
-    <p>answer is {{ answer }}</p> 
-    <span class="hidden">Here is it, you CHEATER! -> {{session['nr']}} </span>
+
+
+    <p>{{ answer }}</p>
+    <p>{{ again|safe}}</p>
+
+    <!-- <form action="/reset">
+        <input class="again" type="submit" value="Start a New Game">
+    </form> -->
+
+    <span class="hidden">Here it is , you CHEATER! -> {{session['nr']}} </span>
+
 </body>
 </html>
+
+

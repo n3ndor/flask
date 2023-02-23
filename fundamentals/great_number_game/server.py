@@ -8,8 +8,10 @@ app.secret_key ="RunTimeError: The session is unavailable because no secret key 
 
 @app.route("/")
 def index():
-    answer="your guess"
+    answer = "your guess"
+    again = " "
     session["nr"] = random.randint(1,100)
+    print("session",session)
     return render_template("index.html")
 
 @app.route("/reset")
@@ -20,18 +22,18 @@ def new_game():
 @app.route("/guess", methods=["post"])
 def guess():
     if int(request.form["nr"]) == int(session["nr"]):
-        answer = "you are Correct"
-        return render_template("index.html", answer = answer)
+        answer = "Your Guess is Correct, do you want to try again?"
+        again = "<form action='/reset'><input class='again' type='submit' value='Start a New Game'></form>"
+        return render_template("index.html", answer = answer, again=again)
+
     elif int(request.form["nr"]) < int(session["nr"]):
-        answer = "too low, go higher"
+        answer = "Your Guess is too low, go higher"
         return render_template("index.html", answer = answer)
+
     else:
-        answer = "too high, go lower"
+        answer = "Your Guess is too high, go lower"
         return render_template("index.html", answer = answer)
 
-
-    # session["submit"] = int(request.form["submit"])
-    # return redirect("/")
 
 if __name__ == "__main__":
     app.run(debug=True)

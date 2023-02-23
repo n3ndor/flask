@@ -1,0 +1,31 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+#farm,
+#cave,
+#house,
+#casino {
+    border: 1px solid;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.showGold {
+    border: 1px solid;
+}
+
+button {
+    background-color: brown;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px;
+}
