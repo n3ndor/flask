@@ -6,9 +6,10 @@ app.secret_key="we don't have any secrets"
 
 @app.route("/")
 def index():
+    print(session)
     return render_template("index.html")
 
-@app.route("/process", methods=["post"])
+@app.route("/process", methods=["POST"])
 def process():
     session["name"] = request.form["name"]
     session["location"] = request.form["location"]

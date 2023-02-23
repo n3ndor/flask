@@ -11,28 +11,57 @@
     <div class="container">
         
         <form class="form" action="/process" method="post">
+
             <h2>Dojo Survey</h2>
-            <label for="name">Name:</label>
+            <label for="name"><h3>Name:</h3> </label>
             <input type="text" name="name">
-            <label for="location">Dojo Location:</label>
-            <select name="location">
-                <option value="Ch">Chicago</option>
-                <option value="Bb">Burbank</option>
-                <option value="Bv">Bellevue</option>
-                <option value="Se">Seattle</option>
-                <option value="La">Los Angeles</option>
-                <option value="Sj">San Jose</option>
-                <option value="remote" selected>Online</option>
-            </select>
-            <label for="language">Favorite Language:</label>
-            <select name="language">
+
+            <br>
+            <div>
+                <h3  style="display: inline;">Are you learning Remote?</h3> 
+                <input id="remote" type="checkbox" name="remote" checked >
+            </div>
+            
+            <h3>Dojo Location:<h3>
+            <div class="radio">
+                <input type="radio" name="location" value="remote" checked="checked">
+                <label for="location">Online</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="Chicago" >
+                <label for="location">Chicago</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="Burbank" >
+                <label for="location">Burbank</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="Bellevue" >
+                <label for="location">Bellevue</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="Settle" >
+                <label for="location">Settle</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="Los Angeles" >
+                <label for="location">Los Angeles</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="location" value="San Jose" >
+                <label for="location">San Jose</label>
+            </div>
+
+            <label for="language"><h3>Favorite Language:</h3> </label>
+            <select class="form" name="language">
                 <option>Web Fundamentals</option>
                 <option selected>Python</option>
                 <option>JavaScript</option>
                 <option>Java</option>
             </select>
-            <label for="comment">Comments:</label>
-            <textarea name="comment" cols="20" rows="5" placeholder="Tell us something about you..."></textarea>
+
+            <label for="comment"><h3>Comments:</h3> </label>
+            <textarea name="comment" cols="24" rows="5" placeholder="Tell us something about you..."></textarea>
             <input class="send" type="submit" value="Send">
         </form>
     </div>

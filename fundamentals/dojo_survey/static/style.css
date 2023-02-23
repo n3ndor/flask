@@ -2,6 +2,10 @@ h2 {
     color: gold
 }
 
+h3 {
+    margin: 20px 0 0 0;
+}
+
 .send {
     background-color: gold;
     border: none;
@@ -13,11 +17,12 @@ h2 {
 .form {
     display: flex;
     flex-direction: column;
-    color: white;
+
 }
 
 .container {
     background-color: rgb(71, 71, 71);
+    color: white;
     width: 250px;
     position: fixed;
     top: 50%;
