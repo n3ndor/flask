@@ -7,10 +7,7 @@ body {
     gap: 20px;
 }
 
-#farm,
-#cave,
-#house,
-#casino {
+.box {
     border: 1px solid;
     margin-top: 20px;
     text-align: center;
@@ -20,8 +17,8 @@ body {
     border: 1px solid;
 }
 
-button {
-    background-color: brown;
+.find {
+    background-color: orangered;
     margin-bottom: 20px;
     cursor: pointer;
 }

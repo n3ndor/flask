@@ -11,32 +11,28 @@
     <h2>Welcome to Ninja Gold Game:</h2>
     <span class="showGold">Your gold: 💰 {{ gold }}</span>
 
-    <form action="process_money">
-        
-    </form>
-
-
     <div class="container">
-        <div id="farm">
+        <form class="box" action="process_money" method="post">
             <h3>Farm</h3>
             <p>(earn 10-20 golds)</p>
-            <button type="submit">Find Gold!</button>
-        </div>
-        <div id="cave">
+            <input class="find" type="submit" name="farm" value="Find Gold!">
+        </form>
+        <form class="box" action="process_money" method="post">
             <h3>Cave</h3>
             <p>(earn 5-10 golds)</p>
-            <button type="submit">Find Gold!</button>
-        </div>
-        <div id="house">
+            <input class="find" type="submit" value="Find Gold!">
+        </form>
+        <form class="box" action="process_money" method="post">
             <h3>House</h3>
             <p>(earn 2-5 golds)</p>
-            <button type="submit">Find Gold!</button>
-        </div>
-        <div id="casino">
+            <input class="find" type="submit" value="Find Gold!">
+        </form>
+        <form class="box" action="process_money" method="post">
             <h3>Casino</h3>
             <p>(earn/takes 0-50 golds)</p>
-            <button type="submit">Find Gold!</button>
-        </div>
+            <input class="find" type="submit" value="Find Gold!">
+        </form>
     </div>
+
 </body>
 </html>
